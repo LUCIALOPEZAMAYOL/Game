@@ -1,5 +1,13 @@
+:root{
+  --font-text: 'Quicksand', sans-serif;
+  --fuccia-claro: palevioletred;
+  --fuccia-oscuro: rgb(199, 23, 82);
+  --celeste-claro: rgb(144, 238, 238);
+  --celeste-oscuro: rgb(25, 148, 148);
+  --verde-claro: palegreen;
+  --verde-oscuro: rgb(33, 131, 33);
+}
 body {
     text-align: center;
     font-family: "Arial";
-    background-color: papayawhip;
 }
