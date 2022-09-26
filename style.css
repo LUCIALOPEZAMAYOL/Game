@@ -6,6 +6,7 @@
   --celeste-oscuro: rgb(25, 148, 148);
   --verde-claro: palegreen;
   --verde-oscuro: rgb(33, 131, 33);
+  --color-fondo: rgb(252,252,252);
 }
 body {
     text-align: center;
