@@ -1,13 +1,85 @@
 :root{
   --font-text: 'Quicksand', sans-serif;
-  --fuccia-claro: palevioletred;
+  --fuccia-claro: rgb(218, 75, 123);
   --fuccia-oscuro: rgb(199, 23, 82);
-  --celeste-claro: rgb(144, 238, 238);
+  --celeste-claro: rgb(78, 233, 233);
   --celeste-oscuro: rgb(25, 148, 148);
-  --verde-claro: palegreen;
+  --verde-claro: rgb(63, 235, 63);
   --verde-oscuro: rgb(33, 131, 33);
+  --color-fondo: rgb(252,252,252);
+  --title-size: 3rem;
 }
 body {
-    text-align: center;
     font-family: var(--font-text);
+}
+main{
+  max-width: 100%;
+  max-height: 100%;
+}
+section.viewWelcome{
+  width: 100%;
+  height: 100vh;
+}
+.viewWelcome .containerWelcome{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: var(--color-fondo);
+  width: 100%;
+  height: 100vh;
+}
+.containerWelcome .div-title h1{
+  font-size: var(--title-size);
+  font-weight: bold;
+  margin: 0;
+}
+.containerWelcome figure{
+  margin: 0;
+}
+.containerWelcome figure img{
+  width: 35vw;
+  height: 30vh;
+}
+.containerWelcome .div-piedra-papel-tijera{
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+.containerWelcome .div-piedra-papel-tijera p{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+.containerWelcome .div-piedra-papel-tijera p:nth-child(1){
+  color: var(--fuccia-claro);
+}
+.containerWelcome .div-piedra-papel-tijera p:nth-child(2){
+  color: var(--celeste-claro);
+}
+.containerWelcome .div-piedra-papel-tijera p:nth-child(3){
+  color: var(--verde-claro);
+}
+.containerWelcome form{
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.containerWelcome form .input-text{
+  width: 300px;
+  padding: 5px;
+  border-radius: 5px;
+  outline-style: none;
+  font-size: 1rem;
+  border: 2px solid var(--fuccia-claro);
+}
+.containerWelcome form .input-submit{
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 7px;
+  background-image: linear-gradient(45deg, var(--fuccia-oscuro), var(--celeste-oscuro), var(--verde-oscuro));
+  border-radius: 7px;
+  border: 2px solid var(--fuccia-claro);
 }
