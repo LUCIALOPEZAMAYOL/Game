@@ -85,3 +85,17 @@ section.viewWelcome{
   border-radius: 7px;
   border: 2px solid var(--fuccia-claro);
 }
+
+/*Estilos para viewGame*/
+section.viewGame{
+  width: 100%;
+  height: 100vh;
+}
+.viewGame .containerGame{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100vh;
+}
