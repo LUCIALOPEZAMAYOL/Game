@@ -193,3 +193,10 @@ section.viewGame{
   padding: 5px;
   border-radius: 7px;
 }
+/*Estilos para esconde vistas*/
+.show{
+  display:block;
+}
+.hidden{
+  display: none;
+}
