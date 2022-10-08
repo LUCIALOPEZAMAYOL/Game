@@ -7,6 +7,10 @@ const getBtnSalir = document.getElementById('salir');
 const getBtnRock = document.getElementById('rock');
 const getBtnPaper = document.getElementById('paper');
 const getBtnScissors = document.getElementById('scissors');
+const piedra = "PIEDRA";
+const papel = "PAPEL";
+const tijera = "TIJERA";
+let getImgUser = document.getElementById('img-user');
 
 getForm.addEventListener('submit', getNameUser);
 function getNameUser(e) {
@@ -35,4 +39,17 @@ function funcionSalir() {
 
 getBtnRock.addEventListener('click', btnRock);
 getBtnPaper.addEventListener('click', btnPaper);
-getBtnScissors.addEventListener('click', getBtnScissors);
+getBtnScissors.addEventListener('click', btnScissors);
+
+function btnRock() {
+    getImgUser.src = "./assets/PIEDRA.png";
+}
+
+function btnPaper() {
+    getImgUser.src = "./assets/PAPEL.png";
+}
+
+function btnScissors() {
+    getImgUser.src = "./assets/TIJERA.png";
+}
+
