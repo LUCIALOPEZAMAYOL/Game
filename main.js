@@ -3,6 +3,7 @@ document.querySelector('.viewGame').classList.add('hidden');
 let getForm = document.getElementById('form-box');
 let getInputText = document.getElementById('inputName');
 let getElementNameText = document.getElementById('name-text');
+const getBtnSalir = document.getElementById('salir');
 
 getForm.addEventListener('submit', getNameUser);
 function getNameUser(e) {
@@ -21,4 +22,10 @@ function addRemoveClassShowHideBtnIngresar() {
 
 function showNameUserInGame(name) {
     getElementNameText.innerText = `Hola ${name}!! diviértete jugando`
+}
+
+getBtnSalir.addEventListener('click', funcionSalir);
+
+function funcionSalir() {
+    location.reload();
 }

@@ -122,6 +122,7 @@ section.viewGame{
   background-image: linear-gradient(45deg, var(--fuccia-oscuro), var(--celeste-oscuro), var(--verde-oscuro));
   position: absolute;
   right: 20px;
+  cursor: pointer;
 }
 .containerGame .title-player{
   display: flex;
