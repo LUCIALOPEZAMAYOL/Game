@@ -4,6 +4,9 @@ let getForm = document.getElementById('form-box');
 let getInputText = document.getElementById('inputName');
 let getElementNameText = document.getElementById('name-text');
 const getBtnSalir = document.getElementById('salir');
+const getBtnRock = document.getElementById('rock');
+const getBtnPaper = document.getElementById('paper');
+const getBtnScissors = document.getElementById('scissors');
 
 getForm.addEventListener('submit', getNameUser);
 function getNameUser(e) {
@@ -29,3 +32,7 @@ getBtnSalir.addEventListener('click', funcionSalir);
 function funcionSalir() {
     location.reload();
 }
+
+getBtnRock.addEventListener('click', btnRock);
+getBtnPaper.addEventListener('click', btnPaper);
+getBtnScissors.addEventListener('click', getBtnScissors);
