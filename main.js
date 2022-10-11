@@ -45,28 +45,37 @@ getBtnPaper.addEventListener('click', btnPaper);
 getBtnScissors.addEventListener('click', btnScissors);
 
 function btnRock() {
-    getImgUser.src = "./assets/"+ piedra + ".png";
-    ResultGame(piedra);
+    resultGame(piedra);
 }
 
 function btnPaper() {
-    getImgUser.src = "./assets/"+ papel + ".png";
-    ResultGame(papel);
+    resultGame(papel);
 }
 
 function btnScissors() {
-    getImgUser.src = "./assets/"+ tijera + ".png";
-    ResultGame(tijera);
+    
+    resultGame(tijera);
 }
 
-function ResultGame(userOption) {
-    let machineOption = calcOptionMachine();
+function resultGame(user) {
+    let machine = calcOptionMachine();
+    getImgUser.src = "./assets/"+ user + ".png";
+    getImgMachine.src = "./assets/CARGANDO.gif";
+    getResultText.innerText = "Calculando resultado";
+    getImgResult.src = "./assets/CALCULANDO.gif";
+    setTimeout(() => {
+        getImgMachine.src = "./assets/"+machine+".png";
+        calcLogicGame(user, machine); 
+    }, 4000);
+}
+
+function calcLogicGame(userOption, machineOption) {
     if(userOption===machineOption){
         getResultText.innerText = "Empates";
         getImgResult.src = "./assets/EMPATE.gif";
     }
     else if(userOption===piedra && machineOption===tijera || userOption===papel && machineOption===piedra || userOption===tijera && machineOption===papel){
-        getResultText.innerText = "Ganaste";
+        getResultText.innerText = "Ganaste!!";
         getImgResult.src = "./assets/GANAR.gif";
     }
     else if(userOption===piedra && machineOption===papel || userOption===papel && machineOption===tijera || userOption===tijera && machineOption===piedra){

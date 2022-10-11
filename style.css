@@ -9,6 +9,7 @@
   --color-fondo: rgb(252,252,252);
   --title-size: 3rem;
   --subtitle-size: 2.5rem;
+  --text-size: 2rem;
 }
 body {
     font-family: var(--font-text);
@@ -66,7 +67,7 @@ section.viewWelcome{
 .containerWelcome form{
   width: 50%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 .containerWelcome form .input-text{
   width: 300px;
@@ -75,6 +76,7 @@ section.viewWelcome{
   outline-style: none;
   font-size: 1rem;
   border: 2px solid var(--fuccia-claro);
+  margin-right: 20px;
 }
 .containerWelcome form .input-submit{
   cursor: pointer;
@@ -85,6 +87,7 @@ section.viewWelcome{
   background-image: linear-gradient(45deg, var(--fuccia-oscuro), var(--celeste-oscuro), var(--verde-oscuro));
   border-radius: 7px;
   border: 2px solid var(--fuccia-claro);
+  margin-left: 20px;
 }
 
 /*Estilos para viewGame*/
@@ -150,6 +153,19 @@ section.viewGame{
 }
 .containerGame div.box-result{
   display: flex;
+  justify-content: center;
+  width: 70%;
+  align-items: center;
+}
+div.box-result p{
+  font-size: var(--text-size);
+  margin-right: 20px;
+}
+div.box-result img{
+  width: 150px;
+  height: 100px;
+  border-radius: 10px;
+  margin-left: 20px;
 }
 .containerGame p{
   text-align: center;
