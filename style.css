@@ -249,4 +249,58 @@ div.box-result img{
     margin-left: 0;
     margin-top: 10px;
   }
+  .containerGame .div-header h2{
+    font-size: 1.3rem;
+  }
+  .containerGame .div-header button{
+    font-size: .7rem;
+    width: 40px;
+    height: 20px;
+    right: 5px;
+    top: 3px;
+  }
+  .containerGame .title-player{
+    width: 70%;
+  }
+  .containerGame .title-player span{
+    font-size: 1rem;
+  }
+  .containerGame figure{
+    width: 90%;
+    height: 150px;
+  }
+  .containerGame figure img{
+    width: 100px;
+    height: 100px;
+  }
+  .containerGame div.box-result{
+    width: 80%;
+  }
+  div.box-result p{
+    font-size: 1.5rem;
+  }
+  div.box-result img{
+    width: 100px;
+    height: 100px;
+  }
+  .containerGame p{
+    font-size: 1.1rem;
+  }
+  .containerGame div.box-btn{
+    width: 90%;
+  }
+  .containerGame div.box-btn button{
+    width: 90px;
+    height: 90px;
+  }
+  .containerGame div.box-btn button img{
+    width: 60px;
+    height: 60px;
+  }
+  .containerGame div.title-btn{
+    width: 90%;
+  }
+  .containerGame div.title-btn span{
+    font-size: .8rem;
+  }
 }
